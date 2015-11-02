@@ -3,6 +3,13 @@ import pygame.image
 import subprocess
 import os
 import time
+import random
+
+qty3 = 6
+qty4 = 50
+qty5 = 50
+qty6 = 50
+qty7 = 20
 
 def take_photo():
     pygame.camera.init()
@@ -27,27 +34,176 @@ def file_len(fname):
         return i+1
 
 def read_json():
+    randomNo = random.randint(1,20)
+    print randomNo
     readvar = file_len("out.json")
-    if not readvar == 1:
+    if not readvar == 1 and (randomNo == 1 or randomNo == 2 or randomNo == 3 or randomNo == 4 or randomNo == 5 or randomNo == 6 or randomNo == 7):
 	
         with open('video.css', 'r') as file:
             # read a list of lines into data
             data = file.readlines()
     	    # now change the 14th line
     	    data[13] = '    display: none;\n'
-
+    	    data[28] = '    display: block;\n'
+    	    
     	    # and write everything back
     	    with open('video.css', 'w') as file:
                 file.writelines( data )
-	    subprocess.call("DEL /F /S /Q /A out.json", shell=True)
-    	    time.sleep(2)
+    	    time.sleep(10)                
+        with open('video.css', 'r') as file:
+            # read a list of lines into data
+            data = file.readlines()
+    	    # now change the 14th line
+    	    data[13] = '    display: block;\n'
+    	    data[28] = '    display: none;\n'
+    	    
+    	    # and write everything back
+    	    with open('video.css', 'w') as file:
+                file.writelines( data )
+
+    if not readvar == 1 and (randomNo == 8):
+        global qty3
+        qty3 = qty3 - 1	
+        with open('video.css', 'r') as file:
+            # read a list of lines into data
+            data = file.readlines()
+    	    # now change the 14th line
+    	    data[13] = '    display: none;\n'
+    	    data[43] = '    display: block;\n'
+    	    
+    	    # and write everything back
+    	    with open('video.css', 'w') as file:
+                file.writelines( data )
+                
+    	    time.sleep(10)                
+        with open('video.css', 'r') as file:
+            # read a list of lines into data
+            data = file.readlines()
+    	    # now change the 14th line
+    	    data[13] = '    display: block;\n'
+    	    data[43] = '    display: none;\n'
+    	    
+    	    # and write everything back
+    	    with open('video.css', 'w') as file:
+                file.writelines( data )
+ 	
+    if not readvar == 1 and not qty3 < 1 and (randomNo == 9 or randomNo == 10 or randomNo == 11):
+        global qty4
+        qty4 = qty4 - 1
+	
+        with open('video.css', 'r') as file:
+            # read a list of lines into data
+            data = file.readlines()
+    	    # now change the 14th line
+    	    data[13] = '    display: none;\n'
+    	    data[58] = '    display: block;\n'
+    	    
+    	    # and write everything back
+    	    with open('video.css', 'w') as file:
+                file.writelines( data )
+                
+    	    time.sleep(10)                
+        with open('video.css', 'r') as file:
+            # read a list of lines into data
+            data = file.readlines()
+    	    # now change the 14th line
+    	    data[13] = '    display: block;\n'
+    	    data[58] = '    display: none;\n'
+    	    
+    	    # and write everything back
+    	    with open('video.css', 'w') as file:
+                file.writelines( data )
+
+    if not readvar == 1 and not qty4 < 1 and (randomNo == 12 or randomNo == 13 or randomNo == 14):
+        global qty5
+        qty5 = qty5 - 1
+	
+        with open('video.css', 'r') as file:
+            # read a list of lines into data
+            data = file.readlines()
+    	    # now change the 14th line
+    	    data[13] = '    display: none;\n'
+    	    data[73] = '    display: block;\n'
+    	    
+    	    # and write everything back
+    	    with open('video.css', 'w') as file:
+                file.writelines( data )
+                
+    	    time.sleep(10)                
+        with open('video.css', 'r') as file:
+            # read a list of lines into data
+            data = file.readlines()
+    	    # now change the 14th line
+    	    data[13] = '    display: block;\n'
+    	    data[73] = '    display: none;\n'
+    	    
+    	    # and write everything back
+    	    with open('video.css', 'w') as file:
+                file.writelines( data )
+   
+    if not readvar == 1 and not qty5 < 1 and (randomNo == 15 or randomNo == 16 or randomNo == 17):
+        global qty6
+        qty6 = qty6 - 1
+	
+        with open('video.css', 'r') as file:
+            # read a list of lines into data
+            data = file.readlines()
+    	    # now change the 14th line
+    	    data[13] = '    display: none;\n'
+    	    data[88] = '    display: block;\n'
+    	    
+    	    # and write everything back
+    	    with open('video.css', 'w') as file:
+                file.writelines( data )
+    	    time.sleep(10)                
+        with open('video.css', 'r') as file:
+            # read a list of lines into data
+            data = file.readlines()
+    	    # now change the 14th line
+    	    data[13] = '    display: block;\n'
+    	    data[88] = '    display: none;\n'
+    	    
+    	    # and write everything back
+    	    with open('video.css', 'w') as file:
+                file.writelines( data )
+
+    if not readvar == 1 and not qty6 < 1 and (randomNo == 18 or randomNo == 19 or randomNo == 20):
+        global qty7
+        qty7 = qty7 - 1
+	
+        with open('video.css', 'r') as file:
+            # read a list of lines into data
+            data = file.readlines()
+    	    # now change the 14th line
+    	    data[13] = '    display: none;\n'
+    	    data[103] = '    display: block;\n'
+    	    
+    	    # and write everything back
+    	    with open('video.css', 'w') as file:
+                file.writelines( data )
+                
+    	    time.sleep(10)                
+        with open('video.css', 'r') as file:
+            # read a list of lines into data
+            data = file.readlines()
+    	    # now change the 14th line
+    	    data[13] = '    display: block;\n'
+    	    data[103] = '    display: none;\n'
+    	    
+    	    # and write everything back
+    	    with open('video.css', 'w') as file:
+                file.writelines( data )
+       
     else:
 	pass
 
 #This is the main code
 #load_recognizer()
 while True:
-#    take_photo()
+  try:
+    #take_photo()
     compare_photo()
     read_json()
     time.sleep(1)
+  except (TypeError, subprocess.CalledProcessError) as e :
+    pass
